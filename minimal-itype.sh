@@ -30,6 +30,6 @@ if [ "x86_64" == "$arch" ]; then
     itype='t1.micro'
 else
     # 32 bit
-    itype='x1.small'
+    itype='m1.small'
 fi
 echo $itype
