@@ -3,6 +3,9 @@
 # usage:
 #   minimal-itype.sh [-r region] -a ami_id
 # Note that EC2_PRIVATE_KEY and EC2_CERT must be set in your environment.
+#
+# This script's code is in the public domain.
+# Development sponsored by Mobile Web Up ( http://mobilewebup.com )
 
 region=$EC2_REGION
 while getopts 'a:r:' arg; do
