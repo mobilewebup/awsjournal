@@ -105,7 +105,6 @@ echo "INFO	Waiting on creation of ami \"$ami\" to complete"
 # Wait on the AMI creation to complete.  Note that this needs to
 # finish before we can terminate the seed instance, otherwise the AMI
 # will break.
-#waitonami.sh -r "$region" $ami 'available'
 function get_ami_status {
     ec2-describe-images --region $region $ami | grep '^IMAGE' | cut -f 5
 }
